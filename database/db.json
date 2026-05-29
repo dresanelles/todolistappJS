@@ -60,6 +60,27 @@
       "title": "Ir a los fritos",
       "description": "Estudiar previamente que selección gastronomica haré el día de hoy en el horario del break.\n",
       "status": "initial"
+    },
+    {
+      "id": "jL5cqtgFn5s",
+      "id_user": "3",
+      "title": "Tomar la foto en Riwi",
+      "description": "Prepararse fisica, psicologica y emocionalmente.",
+      "status": "initial"
+    },
+    {
+      "id": "HAI55woeEKc",
+      "id_user": "3",
+      "title": "Estudiar el material de Javier Combita",
+      "description": "Sacar espacio el fin de semana para repasar todo lo consecuente a JS por el TL en su canal de Youtube.",
+      "status": "initial"
+    },
+    {
+      "id": "NScziBsxSio",
+      "id_user": "3",
+      "title": "Hacer el desayuno",
+      "description": "Preparar todo para hacer los sandwich.",
+      "status": "initial"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
