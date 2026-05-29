@@ -1,15 +1,53 @@
 export default function loginView() {
-    return `<div id="login_container" class="grid grid-cols-1 md:grid-cols-2 min-h-screen w-full">
-        <div class="col-span-1 h-full bg-slate-300 grid place-items-center">
-          <form id="loginForm" class="bg-red-200 flex flex-col p-5 rounded-xl shadow shadow-gray-500 w-100 gap-3">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" class="bg-gray-200 rounded-lg p-2" placeholder="jhon.doe">
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" class="bg-gray-200 rounded-lg p-2" placeholder="*********">
+    return `
+    <div id="login_container" class="min-h-screen w-full flex items-center justify-center bg-[#D9F9DF] p-4 md:p-8 font-sans select-none">
+        
+        <div class="bg-white w-full max-w-md p-6 md:p-10 rounded-3xl shadow-xl shadow-emerald-950/10 relative z-10">
             
-            <button id="btnLogin" class="bg-indigo-200 hover:bg-indigo-400 cursor-pointer py-2 rounded-xl">Login</button>
-          </form>
+            <div class="mb-8 text-center">
+                <div class="flex items-center gap-2 justify-center mb-3">
+                    <div class="w-3 h-3 rounded-full bg-[#9FA1FF]"></div>
+                    <span class="font-extrabold text-gray-900 tracking-tight text-lg">App Notas</span>
+                </div>
+                <h1 class="text-2xl font-extrabold text-gray-950 tracking-tight">¡Te damos la bienvenida!</h1>
+                <p class="text-sm text-gray-400 mt-2">Ingresa tus credenciales para acceder.</p>
+            </div>
+
+            <form id="loginForm" class="flex flex-col gap-5 w-full">
+                <div>
+                    <label for="username" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Username</label>
+                    <input 
+                        type="text" 
+                        name="username" 
+                        id="username" 
+                        required
+                        class="w-full bg-gray-50 border border-gray-200 focus:border-[#9FA1FF] focus:bg-white focus:outline-none rounded-2xl p-3.5 text-sm text-gray-900 transition-all placeholder-gray-300" 
+                        placeholder="luisita.rose"
+                    >
+                </div>
+                
+                <div>
+                    <label for="password" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Password</label>
+                    <input 
+                        type="password" 
+                        name="password" 
+                        id="password" 
+                        required
+                        class="w-full bg-gray-50 border border-gray-200 focus:border-[#9FA1FF] focus:bg-white focus:outline-none rounded-2xl p-3.5 text-sm text-gray-900 transition-all placeholder-gray-300" 
+                        placeholder="•••••••••"
+                    >
+                </div>
+                
+                <button 
+                    id="btnLogin" 
+                    type="submit"
+                    class="w-full bg-[#9FA1FF] hover:bg-[#8688ff] text-white font-bold py-3.5 rounded-2xl text-sm transition-all transform active:scale-[0.98] shadow-lg shadow-indigo-100 cursor-pointer text-center mt-2"
+                >
+                    Iniciar Sesión
+                </button>
+            </form>
+
         </div>
-        <div class="col-span-1 hidden md:block h-full bg-cyan-300"></div>
-      </div>`
+    </div>
+    `
 }

@@ -26,7 +26,41 @@
     }
   ],
   "todo_list": [
-
+    {
+      "id": "1",
+      "id_user": "2",
+      "title": "Estudiar para la prueba de desempeño JS",
+      "description": "Estudiar pa' que no nos saquen.",
+      "status": "completed"
+    },
+    {
+      "id": "2",
+      "id_user": "2",
+      "title": "Maquetar la interfaz de la SPA",
+      "description": "Diseñar los componentes usando clases de Tailwind CSS.",
+      "status": "process"
+    },
+    {
+      "id": "3",
+      "id_user": "3",
+      "title": "Ajustar lógica del proyecto JS",
+      "description": "Revisar los controladores para que conecten bien con json-server.",
+      "status": "completed"
+    },
+    {
+      "id": "5iRtHPCr63g",
+      "id_user": "2",
+      "title": "Estudiar js",
+      "description": "preparar material de estudio para prueba de desempeño",
+      "status": "initial"
+    },
+    {
+      "id": "d1fOMwY5u1I",
+      "id_user": "2",
+      "title": "Ir a los fritos",
+      "description": "Estudiar previamente que selección gastronomica haré el día de hoy en el horario del break.\n",
+      "status": "initial"
+    }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }
