@@ -1,6 +1,6 @@
 export default function loginView() {
     return `
-    <div id="login_container" class="min-h-screen w-full flex items-center justify-center bg-[#D9F9DF] p-4 md:p-8 font-sans select-none">
+    <div id="login_container" class="min-h-screen w-full flex items-center justify-center bg-[#D9F9DF] p-4 md:p-8 font-sans select-none ">
         
         <div class="bg-white w-full max-w-md p-6 md:p-10 rounded-3xl shadow-xl shadow-emerald-950/10 relative z-10">
             
@@ -13,7 +13,7 @@ export default function loginView() {
                 <p class="text-sm text-gray-400 mt-2">Ingresa tus credenciales para acceder.</p>
             </div>
 
-            <form id="loginForm" class="flex flex-col gap-5 w-full">
+            <form id="loginForm" class="flex flex-col gap-5 w-full ">
                 <div>
                     <label for="username" class="block text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">Username</label>
                     <input 
@@ -22,7 +22,7 @@ export default function loginView() {
                         id="username" 
                         required
                         class="w-full bg-gray-50 border border-gray-200 focus:border-[#9FA1FF] focus:bg-white focus:outline-none rounded-2xl p-3.5 text-sm text-gray-900 transition-all placeholder-gray-300" 
-                        placeholder="luisita.rose"
+                        placeholder="ana.del.castillo"
                     >
                 </div>
                 

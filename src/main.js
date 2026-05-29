@@ -1,4 +1,4 @@
-import './style.css'
+import './style.css';
 import notFoundView from './views/notFoundView.js'
 import homeView from './views/homeView.js'
 import loginView from './views/loginView.js'

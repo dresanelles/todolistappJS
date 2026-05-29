@@ -47,7 +47,7 @@ export default function layout() {
           <button class="bg-[#D9F9DF] text-emerald-800 text-xs md:text-sm font-bold px-4 py-2 rounded-full cursor-pointer transition-transform active:scale-95">
             Perfil Usuario
           </button>
-          <button id="btnLogoutGlobal" class="bg-gray-100 hover:bg-red-50 hover:text-red-600 text-gray-600 text-xs md:text-sm font-semibold px-4 py-2 rounded-full cursor-pointer transition-colors active:scale-95">
+          <button id="btnLogoutGlobal" class="bg-red-500 hover:bg-red-50 hover:text-red-600 text-gray-600 text-xs md:text-sm font-semibold px-4 py-2 rounded-full cursor-pointer transition-colors active:scale-95">
             Logout
           </button>
         </div>

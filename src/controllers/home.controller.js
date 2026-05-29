@@ -124,7 +124,7 @@ export async function homeController() {
         })
     }
 
-    // Delegación de eventos para las acciones de cada tarea (Corregido para cumplir el README)
+    // Delegación de eventos para las acciones de cada tarea
     const container = document.getElementById("tasks-container")
     if (container) {
         container.addEventListener("click", async (e) => {
@@ -141,7 +141,7 @@ export async function homeController() {
                 }
             }
 
-            // Editar estado de tarea (¡Permitido tanto para Admin como para User según el README!)
+            // Editar estado de tarea 
             if (e.target.classList.contains("btn-edit")) {
                 const taskId = e.target.getAttribute("data-id")
                 const nuevoEstado = prompt("Cambiar estado a: initial, process o completed")?.toLowerCase().trim()
@@ -188,12 +188,12 @@ async function loadTasks(user) {
             tasks = tasks.filter(task => String(task.id_user).trim() === String(user.id).trim())
         }
 
-        // 2. Filtrar por estado (Query Param 'status')
+        // 2. Filtrar por estado (Query Param status)
         if (statusFilter) {
             tasks = tasks.filter(task => task.status === statusFilter)
         }
 
-        // 3. Filtrar por texto (Query Param 'search' - Exigido en README)
+        // 3. Filtrar por texto (Query Param 'search')
         if (searchFilter) {
             tasks = tasks.filter(task => 
                 task.title.toLowerCase().includes(searchFilter) || 
@@ -224,7 +224,7 @@ async function loadTasks(user) {
             const ownerName = owner ? owner.full_name : "Desconocido"
             const userStyle = userColors[task.id_user] || userColors["default"]
 
-            // Renderizar botones según las reglas del README (El admin ahora tiene los dos botones)
+            // Renderizar botones (El admin ahora tiene los dos botones)
             const actionButtons = user.role === 'admin'
                 ? `
                    <button class="bg-gray-50 hover:bg-gray-100 text-gray-600 font-medium text-xs px-3 py-2 rounded-xl transition-colors border border-gray-200 cursor-pointer btn-edit" data-id="${task.id}">Estado</button>
